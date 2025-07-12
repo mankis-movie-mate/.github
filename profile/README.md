@@ -1,6 +1,6 @@
 # 🎬 Movie Mate
 
-> *Your ultimate microservices playground for movie recommendations, user insights, and cutting-edge microservices tech.*
+> *App for movie recommendations, user insights, and cutting-edge microservices tech.*
 
 ---
 
@@ -48,11 +48,3 @@ Everything is observable out of the box. View metrics, traces, and logs in real 
 - 🛰️ **Zipkin**: Distributed tracing
 - 📡 **OpenTelemetry Collector**: Unified observability pipeline
 
-
-We welcome contributors, ideas, and feedback! 🧠✨
-
----
-
-> _“Software is a craft. Movie Mate is our workshop.”_
-
----
