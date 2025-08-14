@@ -40,7 +40,7 @@
 
 ## 🌐 Observability First
 
-Everything is observable out of the box. View metrics, traces, and logs in real time using:
+Everything is observable out of the box. Metrics, traces, and logs in real time using:
 
 - 📈 **Prometheus**: Metrics collection
 - 🧠 **Grafana**: Unified dashboards
