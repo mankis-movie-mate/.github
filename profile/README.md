@@ -11,17 +11,18 @@
 
 ## 🔍 What’s inside?
 
-| Layer            | Tech Stack 🧰                                                                |
-|------------------|------------------------------------------------------------------------------|
-| **Frontend**     | (Coming soon...) React                                                       |
-| **API Gateway**  | Traefik with Consul Service Discovery                                        |
-| **Microservices**| Polyglot architecture                                                        |
-| **Communication**| Dapr Sidecar + Kafka + REST APIs                                             |
-| **Databases**    | PostgreSQL, MongoDB, Redis, Neo4j                                            |
-| **Observability**| Prometheus, Loki, Zipkin, OpenTelemetry, Grafana                             |
-| **Message Bus**  | Kafka + Dapr Pub/Sub                                                         |
-| **CI/CD**        | GitHub Actions + Docker                                                      |
-| **Security**     | JWT-based auth                                                               |
+| Layer             | Tech Stack 🧰                                                                |
+|-------------------|------------------------------------------------------------------------------|
+| **Frontend**      | (Coming soon...) React                                                       |
+| **API Gateway**   | Traefik with Consul Service Discovery                                        |
+| **Microservices** | Polyglot architecture                                                        |
+| **Communication** | Dapr Sidecar + Kafka + REST APIs                                             |
+| **Databases**     | PostgreSQL, MongoDB, Redis, Neo4j                                            |
+| **Observability** | Prometheus, Loki, Zipkin, OpenTelemetry, Grafana                             |
+| **Message Bus**   | Kafka + Dapr Pub/Sub                                                         |
+| **CI/CD**         | GitHub Actions + Docker                                                      |
+| **Security**      | JWT-based auth                                                               |
+| **Documentation** | OpenAPI                                                                      |
 
 ---
 
