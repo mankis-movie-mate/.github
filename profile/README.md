@@ -10,7 +10,7 @@
 
 ## 🏗️ System Overview
 
-![movie-mate-architecture.drawio.png](../docs/movie-mate-architecture.drawio.png)
+![movie-mate-architecture.png](../docs/movie-mate-architecture.png)
 
 ---
 
