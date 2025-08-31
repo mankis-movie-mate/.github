@@ -6,6 +6,11 @@
 
 **Movie Mate** is a full-stack, containerized, microservices architecture built for real-time movie recommendations and system observability at scale.
 
+---
+
+## 🏗️ System Overview
+
+![movie-mate-architecture.drawio.png](../docs/movie-mate-architecture.drawio.png)
 
 ---
 
