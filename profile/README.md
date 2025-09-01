@@ -1,6 +1,5 @@
 # 🎬 Movie Mate
 
-> *App for movie recommendations, user insights, and cutting-edge microservices tech.*
 
 ---
 [![build](https://img.shields.io/github/actions/workflow/status/mankis-movie-mate/mm-infrastructure/deploy.yml?branch=main&logo=github)](https://github.com/mankis-movie-mate/mm-infrastructure/actions)
@@ -10,8 +9,8 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-pink.svg)](#-contributing)
 
 
-Movie Mate is a **full-stack, polyglot micro-service platform** deployed on a managed **Kubernetes cluster**.  
-It delivers personalised recommendations, instant insights, and *observability by design*.
+> **Movie Mate** is a full-stack, polyglot platform that delivers personalised movie recommendations with **Dapr sidecars**, **Kafka**, and **end-to-end observability**.  
+> Deployed on **Kubernetes** (k3s or full k8s).
 ---
 
 ## 🔎 Table of Contents
@@ -70,7 +69,7 @@ It delivers personalised recommendations, instant insights, and *observability b
 
 ## 🔒 JWT Auth Flow
 
-> **One way in**: the API Gateway is your bouncer; **User Service** is the ID checker.
+> **One way in**: the API Gateway is the bouncer; **User Service** is the ID checker.
 
 ```mermaid
 sequenceDiagram
