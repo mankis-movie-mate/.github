@@ -10,8 +10,8 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-pink.svg)](#-contributing)
 
 
-Movie Mate is a **full-stack, polyglot micro-service platform** deployed on a managed **Kubernetes cluster**.  
-It delivers personalised recommendations, instant insights, and *observability by design*.
+> **Movie Mate** is a full-stack, polyglot platform that delivers personalised movie recommendations with **Dapr sidecars**, **Kafka**, and **end-to-end observability**.  
+> Deployed on **Kubernetes** (k3s or full k8s). _Security first_ via **JWT** at the edge.
 ---
 
 ## 🔎 Table of Contents
@@ -32,18 +32,18 @@ It delivers personalised recommendations, instant insights, and *observability b
 ---
 
 ## 📚 Tech Stack
-| Layer | Tech |
-|---|---|
-| **Frontend** | (coming soon) React |
-| **API Gateway** | Traefik + Consul (service discovery) |
-| **Microservices** | Java • Node.js • Kotlin • Python |
-| **Communication** | Dapr Sidecars • Kafka Pub/Sub • REST |
-| **Databases** | PostgreSQL • MongoDB • Redis • Neo4j |
+| Layer | Tech                                                 |
+|---|------------------------------------------------------|
+| **Frontend** | React, TypeScript, Next.js, Tailwind                 |
+| **API Gateway** | Traefik + Consul (service discovery)                 |
+| **Microservices** | Java • Node.js • Kotlin • Python                     |
+| **Communication** | Dapr Sidecars • Kafka Pub/Sub • REST                 |
+| **Databases** | PostgreSQL • MongoDB • Redis • Neo4j                 |
 | **Observability** | Prometheus • Loki • Zipkin • OpenTelemetry • Grafana |
-| **CI/CD** | GitHub Actions • Docker |
-| **Platform** | **Kubernetes** (k3s) |
-| **Security** | JWT (validated by User Service via API Gateway) |
-| **Docs** | OpenAPI (aggregated in **mm-openapi-hub**) |
+| **CI/CD** | GitHub Actions • Docker                              |
+| **Platform** | **Kubernetes** (k3s)                                 |
+| **Security** | JWT (validated by User Service via API Gateway)      |
+| **Docs** | OpenAPI (aggregated in **mm-openapi-hub**)           |
 
 ---
 
@@ -62,7 +62,8 @@ It delivers personalised recommendations, instant insights, and *observability b
 
 ## 🛠️ Platform & Utilities
 | Repo                                                                          | Description                                   | Tech                                                                                                                                                                        |
-| ----------------------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|-------------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [`mm-app-view`](https://github.com/mankis-movie-mate/mm-infrastructure)       | Frontend                                      | ![React](https://img.shields.io/badge/React-✔️-blue?logo=react) ![Next.js](https://img.shields.io/badge/Next.js-informational?logo=nextjs)                                  |
 | [`mm-infrastructure`](https://github.com/mankis-movie-mate/mm-infrastructure) | IaC, manifests, CI/CD pipeline for deployment | ![CI/CD](https://img.shields.io/badge/GitHub%20Actions-✔️-blue?logo=githubactions) ![Kubernetes](https://img.shields.io/badge/Kubernetes-k3s-informational?logo=kubernetes) |
 | [`mm-openapi-hub`](https://github.com/mankis-movie-mate/mm-openapi-hub)       | Centralised Swagger UI for all services       | ![Swagger UI](https://img.shields.io/badge/OpenAPI-Swagger-green?logo=swagger)                                                                                              |
 

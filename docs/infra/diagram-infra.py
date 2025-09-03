@@ -1,14 +1,16 @@
+import os
+
 from diagrams import Diagram, Cluster, Edge
+from diagrams.custom import Custom
+from diagrams.generic.blank import Blank
+from diagrams.onprem.client import Users
+from diagrams.onprem.logging import Loki
+from diagrams.onprem.monitoring import Prometheus, Grafana
 from diagrams.onprem.network import Traefik, Consul
+from diagrams.onprem.queue import Kafka
 from diagrams.programming.language import Java, Kotlin, Python, NodeJS
 from diagrams.programming.runtime import Dapr
-from diagrams.onprem.client import Users
-from diagrams.onprem.queue import Kafka
-from diagrams.onprem.monitoring import Prometheus, Grafana
-from diagrams.onprem.logging import Loki
-from diagrams.generic.blank import Blank
-from diagrams.custom import Custom
-import os
+
 
 def openapi_node():
     icon_path = os.path.join("assets", "openapi.png")
