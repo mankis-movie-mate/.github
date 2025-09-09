@@ -109,11 +109,15 @@ Everything is observable out of the box. Metrics, traces, and logs in real time 
 Planned and upcoming features for **Movie Mate** — both for dev experience and user functionality:
 
 ### 🎯 Core Features
-- 🖼️ **Frontend App**: React + Next.js SPA for browsing movies and managing account
 - 🔐 **RBAC & Multi-tenancy**: Role-based access control 
-- 🚩 **Feature Flags**: Fine-grained control with [Unleash](https://www.getunleash.io/) for toggling features live
-- ✅ **End-to-End Testing**: CI-based tests using [KinD](https://kind.sigs.k8s.io/) + GitHub Actions for full cluster testing
+- 🚩 **Feature flags**: Fine-grained control with [Unleash](https://www.getunleash.io/) for toggling features live
+- ✅ **End-to-End testing**: CI-based tests using [KinD](https://kind.sigs.k8s.io/) + GitHub Actions for full cluster testing
+- 🔍 **Workflows & Sagas**: Integrate Temporal. Makes multi-step, long-running processes reliable.
+- 🔍 **Keycloak (OIDC)**: Centralize identity (SSO, JWT, refresh), model complex permissions.
 
 ### 🚀 DevOps / Platform
-- 🌀 **Canary Releases**: Progressive delivery with [Argo Rollouts](https://argoproj.github.io/argo-rollouts/)
-- 🔍 **Zero-Downtime Observability**: Auto instrument new services with OTEL SDKs
+- 🌀 **Canary releases**: Progressive delivery with [Argo Rollouts](https://argoproj.github.io/argo-rollouts/)
+- 🔍 **Zero-downtime observability**: Auto instrument new services with OTEL SDKs
+- 🔍 **Schema registry**: Integrate Apicurio Registry (version control for message formats) 
+- 🔍 **Secret management**: Integrate HashiCorp Vault.
+- 🔍 **Service mesh**: Integrate Linkerd or Istio Ambient.
