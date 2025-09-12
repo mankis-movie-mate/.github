@@ -2,7 +2,6 @@
 
 
 ---
-[![build](https://img.shields.io/github/actions/workflow/status/mankis-movie-mate/mm-infrastructure/deploy.yml?branch=main&logo=github)](https://github.com/mankis-movie-mate/mm-infrastructure/actions)
 [![license](https://img.shields.io/github/license/mankis-movie-mate/.github?color=blue)](LICENSE)
 [![made-with-k8s](https://img.shields.io/badge/Kubernetes-ready-blue?logo=kubernetes)](docs/k8s)
 [![openapi-hub](https://img.shields.io/badge/OpenAPI-Hub-green?logo=swagger)](https://github.com/mankis-movie-mate/mm-openapi-hub)
