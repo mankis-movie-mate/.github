@@ -93,6 +93,45 @@ sequenceDiagram
     end
 ```
 
+## 🔒 Internal service authentication with OAuth2 Proxy and Keycloak
+
+This deployment secures internal services (e.g., Grafana, TraefikApi) 
+using OAuth2 Proxy with Keycloak as the identity provider. It ensures that only authenticated users with valid sessions can access sensitive dashboards.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant C as Client
+    participant T as Traefik (API Gateway)
+    participant O as oauth2-proxy
+    participant K as Keycloak (OIDC)
+    participant S as Internal Service
+
+    C->>T: Request to /mmate/internal/service
+    T->>O: Forward request to oauth2-proxy
+
+    alt No valid session cookie
+        O-->>C: 302 Redirect to Keycloak
+        C->>K: Login (OIDC)
+        K-->>C: Redirect with auth code
+        C->>O: /oauth2/callback + code
+        O->>K: Exchange code for tokens
+        K-->>O: ID/Access token
+        O-->>C: Set session cookie + redirect
+        C->>T: Retry original request
+        T->>O: Forward to oauth2-proxy
+    end
+
+    alt Valid session
+        O->>S: Forward request with identity headers
+        S-->>O: Response
+        O-->>T: Response
+        T-->>C: Response
+    else Unauthorized
+        O-->>C: 401 / Redirect to login
+    end
+
+```
 ## 🌐 Observability First
 
 Everything is observable out of the box. Metrics, traces, and logs in real time using:
