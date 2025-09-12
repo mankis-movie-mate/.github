@@ -32,18 +32,19 @@
 ---
 
 ## 📚 Tech Stack
-| Layer | Tech                                                 |
-|---|------------------------------------------------------|
-| **Frontend** | React, TypeScript, Next.js, Tailwind                 |
-| **API Gateway** | Traefik + Consul (service discovery)                 |
-| **Microservices** | Java • Node.js • Kotlin • Python                     |
-| **Communication** | Dapr Sidecars • Kafka Pub/Sub • REST                 |
-| **Databases** | PostgreSQL • MongoDB • Redis • Neo4j                 |
-| **Observability** | Prometheus • Loki • Zipkin • OpenTelemetry • Grafana |
-| **CI/CD** | GitHub Actions • Docker                              |
-| **Platform** | **Kubernetes** (k3s)                                 |
-| **Security** | JWT (validated by User Service via API Gateway)      |
-| **Docs** | OpenAPI (aggregated in **mm-openapi-hub**)           |
+| Layer                   | Tech                                              |
+|-------------------------|---------------------------------------------------|
+| **Frontend**            | React, TypeScript, Next.js, Tailwind              |
+| **API Gateway**         | Traefik + Consul (service discovery)              |
+| **Microservices**       | Java • Node.js • Kotlin • Python                  |
+| **Communication**       | Dapr Sidecars • Kafka Pub/Sub • REST              |
+| **Databases**           | PostgreSQL • MongoDB • Redis • Neo4j              |
+| **Observability**       | Prometheus • Loki • Jaeger • OpenTelemetry • Grafana |
+| **CI/CD**               | GitHub Actions • Docker                           |
+| **Platform**            | **Kubernetes** (k3s)                              |
+| **Security (app)**      | JWT (validated by User Service via API Gateway)   |
+| **Security (internal)** | Keycloak                                          |
+| **Docs**                | OpenAPI (aggregated in **mm-openapi-hub**)        |
 
 ---
 
